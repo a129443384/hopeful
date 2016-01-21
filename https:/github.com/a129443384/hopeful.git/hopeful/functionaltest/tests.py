@@ -19,16 +19,29 @@ class NewVisitorTest(LiveServerTestCase):
         
     
     def test_admin_registered(self):
-        #
-        #
-        #
+        #首頁點選註冊按鈕
+        #輸入姓名、email、資訊部email(特定mail判定)、密碼、手機號碼、
+        #按下註冊按鈕
+        ##確認資料庫權限為最高權限
+        pass
+    
+    
+    def test_admin_login(self):
+        #首頁點選登入按鈕
+        ##進入login頁面
+        ##form表單，email、密碼欄位、登入按鈕
+        #輸入帳號密碼
+        #按下登入按鈕
         pass
     
     
     def test_second_admin_registered(self):
-        #
-        #
-        #
+        #首頁點選註冊按鈕
+        #輸入姓名、email、資訊部email、密碼、手機號碼、
+        #按下註冊按鈕
+        #最高權限會員登入
+        #修改該使用者權限
+        #登入系統
         pass
         
     
