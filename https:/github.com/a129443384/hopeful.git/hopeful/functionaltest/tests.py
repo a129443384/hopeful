@@ -20,6 +20,11 @@ class NewVisitorTest(LiveServerTestCase):
     
     def test_admin_registered(self):
         #首頁點選註冊按鈕
+        self.browser.get(self.live_server_url())
+        self.browser.find_element_by_id('registered').click()
+        seanRegisteredURL = self.browser.current_url
+        self.assertRegex(seanRegisteredURL, '/registered')
+
         #輸入姓名、email、資訊部email(特定mail判定)、密碼、手機號碼、
         #按下註冊按鈕
         ##確認資料庫權限為最高權限
