@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from django.test import LiveServerTestCase
+import time
 
 
 class NewVisitorTest(LiveServerTestCase):
@@ -23,7 +24,8 @@ class NewVisitorTest(LiveServerTestCase):
         self.browser.get(self.live_server_url)
         self.browser.find_element_by_id('registered').click()
         seanRegisteredURL = self.browser.current_url
-        self.assertRegex(seanRegisteredURL, '/registered')
+        self.assertRegex(seanRegisteredURL, '/registration')
+        time.sleep(10)
         self.fail('finish test')
 
         #輸入姓名、email、資訊部email(特定mail判定)、密碼、手機號碼、

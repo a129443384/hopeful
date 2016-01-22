@@ -1,0 +1,274 @@
+
+#freeCourseDiv h2{
+	height: 20px; /* 影片上方標題之高度 */
+	font-size: 30px;
+}
+#freeCourseItem{
+	font-size: 20px;
+	display:block;
+	float:left;
+	padding-top:40px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height:360px;
+	width:250px;
+}
+#freeCourseItem ul li{
+	height: 40px;
+}
+#freeCourseMovie{
+	float:left;
+}
+#freeCourseText{
+	float:left;
+	margin: 10px 50px;
+    padding: 0px 90px 0px 20px;
+	font-size: 26px;
+}
+#freeCourseText button{
+	margin: 0px 0px 0px 65px;
+	font-size: 35px;
+	padding: 10px 10px 10px 10px
+}
+.productItem{
+	display:block;
+	font-size:20px;
+	color: #FFF;
+
+}
+#registrationSubmitForm{
+	margin: 80px;
+}
+
+/* 
+ *      註冊頭像
+ */
+.rbs1-selector-style {
+    display: none;
+
+}
+ 
+.productItem label {
+    display: block;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+ 
+.registrationSubmitForm label:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-animation: jump 0.4s linear 1s;
+    -moz-animation: jump 0.4s linear 1s;
+    -ms-animation: jump 0.4s linear 1s;
+    animation: jump 0.4s linear 1s;
+}
+ 
+.registrationSubmitForm label.heart:after {
+    content: url(/static/images/heart.png);
+    display: none;
+    position: absolute;
+}
+ 
+.registrationSubmitForm input.rbs1-selector-1:checked ~ label.rbs1-label-1,
+.registrationSubmitForm input.rbs1-selector-2:checked ~ label.rbs1-label-2,
+.registrationSubmitForm input.rbs1-selector-3:checked ~ label.rbs1-label-3,
+.registrationSubmitForm input.rbs1-selector-4:checked ~ label.rbs1-label-4,
+.registrationSubmitForm input.rbs1-selector-5:checked ~ label.rbs1-label-5,
+.registrationSubmitForm input.rbs1-selector-6:checked ~ label.rbs1-label-6,
+.registrationSubmitForm input.rbs1-selector-7:checked ~ label.rbs1-label-7 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+ 
+.registrationSubmitForm input.rbs1-selector-1:checked ~ label.rbs1-label-1:after,
+.registrationSubmitForm input.rbs1-selector-2:checked ~ label.rbs1-label-2:after,
+.registrationSubmitForm input.rbs1-selector-3:checked ~ label.rbs1-label-3:after,
+.registrationSubmitForm input.rbs1-selector-4:checked ~ label.rbs1-label-4:after,
+.registrationSubmitForm input.rbs1-selector-5:checked ~ label.rbs1-label-5:after,
+.registrationSubmitForm input.rbs1-selector-6:checked ~ label.rbs1-label-6:after,
+.registrationSubmitForm input.rbs1-selector-7:checked ~ label.rbs1-label-7:after {
+    display: block;
+    bottom: 40px;
+    right: 30px;
+    -webkit-animation: star 0.2s ease-in-out;
+    -moz-animation: star 0.2s ease-in-out;
+    -ms-animation: star 0.2s ease-in-out;
+    animation: star 0.2s ease-in-out;
+}
+ 
+.registrationSubmitForm input.rbs1-selector-1:checked ~ label.rbs1-label-1:hover,
+.registrationSubmitForm input.rbs1-selector-2:checked ~ label.rbs1-label-2:hover,
+.registrationSubmitForm input.rbs1-selector-3:checked ~ label.rbs1-label-3:hover,
+.registrationSubmitForm input.rbs1-selector-4:checked ~ label.rbs1-label-4:hover,
+.registrationSubmitForm input.rbs1-selector-5:checked ~ label.rbs1-label-5:hover,
+.registrationSubmitForm input.rbs1-selector-6:checked ~ label.rbs1-label-6:hover,
+.registrationSubmitForm input.rbs1-selector-7:checked ~ label.rbs1-label-7:hover {
+    -webkit-animation: rock 0.4s linear 1s;
+    -moz-animation: rock 0.4s linear 1s;
+    -ms-animation: rock 0.4s linear 1s;
+    animation: rock 0.4s linear 1s;
+}
+/* 
+ *      註冊方案
+ */
+ 
+.rbs2-selector-style {
+		background-color: rgba(235,16,16,0.7);
+		border: 1px solid #ccc;
+		-webkit-border-radius: 10px;
+		-moz-border-radius:10px;
+		border-radius:10px;
+		padding:25px 20px 20px 20px;
+}
+ 
+.rbs2-selector-style:hover {
+		background-color: rgba(235,16,16,1);
+}
+ 
+.rbs2-selector-style:after {
+    content: url(/static/images/check.png);
+    display: none;
+    position: absolute;
+    transform: scale(.3);
+}
+ 
+.registrationSubmitForm input.rbs2-selector-1:checked ~ label.rbs2-label-1,
+.registrationSubmitForm input.rbs2-selector-2:checked ~ label.rbs2-label-2,
+.registrationSubmitForm input.rbs2-selector-3:checked ~ label.rbs2-label-3,
+.registrationSubmitForm input.rbs2-selector-4:checked ~ label.rbs2-label-4 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+ 
+.registrationSubmitForm input.rbs2-selector-1:checked ~ label.rbs2-label-1:after,
+.registrationSubmitForm input.rbs2-selector-2:checked ~ label.rbs2-label-2:after,
+.registrationSubmitForm input.rbs2-selector-3:checked ~ label.rbs2-label-3:after,
+.registrationSubmitForm input.rbs2-selector-4:checked ~ label.rbs2-label-4:after {
+    display: block;
+    bottom: 30px;
+    right: -70px;
+    -webkit-animation: star 0.2s ease-in-out;
+    -moz-animation: star 0.2s ease-in-out;
+    -ms-animation: star 0.2s ease-in-out;
+    animation: star 0.2s ease-in-out;
+}
+ 
+.registrationSubmitForm input.rbs2-selector-1:checked ~ label.rbs2-label-1:hover,
+.registrationSubmitForm input.rbs2-selector-2:checked ~ label.rbs2-label-2:hover,
+.registrationSubmitForm input.rbs2-selector-3:checked ~ label.rbs2-label-3:hover,
+.registrationSubmitForm input.rbs2-selector-4:checked ~ label.rbs2-label-4:hover {
+    -webkit-animation: rock 0.4s linear 1s;
+    -moz-animation: rock 0.4s linear 1s;
+    -ms-animation: rock 0.4s linear 1s;
+    animation: rock 0.4s linear 1s;
+}
+
+@keyframes "rock" {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center bottom;
+    }
+ 
+    12.5% {
+        transform: rotate(-5deg);
+        transform-origin: center bottom;
+    }
+ 
+    37.5% {
+        transform: rotate(5deg);
+        transform-origin: center bottom;
+    }
+ 
+    62.5% {
+        transform: rotate(-5deg);
+        transform-origin: center bottom;
+    }
+ 
+    87.5% {
+        transform: rotate(5deg);
+        transform-origin: center bottom;
+    }
+     
+    100% {
+        transform: rotate(0deg);
+        transform-origin: center bottom;
+    }
+}
+ 
+@keyframes "jump" {
+    0% {
+        transform: translate(0,0);
+    }
+     
+    25% {
+        transform: translate(0,-20px);
+    }
+     
+    50% {
+        transform: translate(0,0);
+    }
+     
+    75% {
+        transform: translate(0,-20px);
+    }
+     
+    100% {
+        transform: translate(0,0);
+    }
+}
+ 
+@keyframes "star" {
+    0% {
+        transform: scale(0);
+    }
+  
+    66% {
+        transform: scale(2);
+    }
+  
+    100% {
+        transform: scale(1);
+    }
+}
+.ui-widget-content{
+	background:hsla(34, 65%, 60%,0.6) !important;
+}
+.ui-widget-header {
+	background:rgba(255,255,255,0) !important;
+}
+#dialog,#loginFormStyle,.ui-dialog-titlebar span{
+	font-weight: bold;
+	color:#003C9D;
+	text-shadow: 0px 0px 3px #FFF, 
+				 0px 0px 3px #FFF, 
+				 0px 0px 3px #FFF;
+	line-height:28px;
+}
+
+.ui-dialog-titlebar span{
+	font-size:20px;
+}
+#nowRegistration{
+	margin-right:0px;
+}
+#down{
+	position: absolute;
+	z-index:100000px;
+	color:rgba(255,255,255,0.5);
+	font-size:100px;
+	bottom:-50px;
+	text-align:center;
+	width:100%;
+}

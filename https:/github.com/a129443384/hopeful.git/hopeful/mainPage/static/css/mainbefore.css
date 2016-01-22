@@ -1,0 +1,65 @@
+body
+{
+	width:960px;
+	height:960px;
+	margin:0 auto;
+}
+header, footer 
+{
+  text-align: center;
+  width: 100%;
+}
+header 
+{
+  height:15%;
+  font-size: 36px;
+  font-weight: bold;
+  background-image:url(/static/images/banner.jpg);
+}
+nav 
+{
+  width: 100%;
+  height:5%;
+  margin-top: 0px;
+}
+nav ul
+{
+    margin-top: 10px;
+}
+ul li
+{
+	display:inline;
+	padding:2px;
+}
+section 
+{
+  width: 100%;
+  background-color: gray;
+  height:70%;
+  /*
+  padding: 20px;
+  margin: 20px;
+  */
+}
+footer 
+{
+  background-color: green;
+  font-size: 10px;
+  height:10%;
+}
+#newsTable
+{
+	width:100%;
+}
+#newsTable tr td#title
+{
+	width:60%;
+}
+#newsTable tr td#date
+{
+	width:20%;
+}
+#newsTable tr td#author
+{
+	width:10%;
+}
