@@ -25,13 +25,28 @@ class NewVisitorTest(LiveServerTestCase):
         self.browser.find_element_by_id('registered').click()
         seanRegisteredURL = self.browser.current_url
         self.assertRegex(seanRegisteredURL, '/registration')
-        time.sleep(10)
-        self.fail('finish test')
-
-        #輸入姓名、email、資訊部email(特定mail判定)、密碼、手機號碼、
+        
+        #輸入姓名、email、資訊部email(特定mail判定)、密碼、手機號碼、真倉代碼
+        userName = self.browser.find_element_by_id('userName')
+        userName.send_keys('王小明')
+        email = self.browser.find_element_by_id('email')
+        email.send_keys('a129@gmail.com')
+        upperEmail = self.browser.find_element_by_id('upperEmail')
+        upperEmail.send_keys('test@admin.tw')
+        password = self.browser.find_element_by_id('password')
+        password.send_keys('12345')
+        cellphone = self.browser.find_element_by_id('cellphone')
+        cellphone.send_keys('0987654321')
+        depot = self.browser.find_element_by_id('depot')
+        depot.send_keys('12345678')
         #按下註冊按鈕
+        depot.send_keys(Keys.ENTER)
+        toniListURL = self.browser.current_url
+        self.assertRegex(toniListURL, '/') 
         ##確認資料庫權限為最高權限
         
+        time.sleep(10)
+        self.fail('finish test')
     
     
     #def test_admin_login(self):
