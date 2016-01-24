@@ -9,11 +9,26 @@ class registration_test(TestCase):
     def test_registration_page_can_save_a_POST_request(self):
         request = HttpRequest()
         request.method='POST'
+        #request.POST['userName', 'email', 'upperEmail', 'password', 'cellphone', 'depot'] = ['RockMan',' tank@test.tw', 'test@admin.tw', '123546', '0987654321', '12345678']
         request.POST['userName'] = 'RockMan'
-        
+        request.POST['email'] = 'tank@test.tw'
+        request.POST['upperEmail'] = 'test@admin.tw'
+        request.POST['password'] = '123456'        
+        request.POST['phone'] = '0987654321'
+        request.POST['depot'] = '12354678'
+                
         views.registration(request)
-        
-        self.assertEqual(models.UserData.objects.count(),1)
+        userData = models.UserData.objects.all()[0]
+        self.assertEqual(request.POST['userName'], userData.userName)
+        self.assertEqual(request.POST['email'], userData.email)
+        self.assertEqual(request.POST['upperEmail'], userData.upperEmail)
+        self.assertEqual(request.POST['password'], userData.password)
+        self.assertEqual(request.POST['phone'], userData.phone)
+        self.assertEqual(request.POST['depot'], userData.depot)
+    
+    
+    def test_registration_save_admin_perssion(self):
+        pass
     
     
     '''
